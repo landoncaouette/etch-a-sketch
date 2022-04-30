@@ -2,6 +2,7 @@ let depth = document.getElementById("dimension").value;
 const input = document.getElementById("dimension");
 const canvas = document.querySelector(".canvas");
 const flash = document.querySelector(".flash");
+let color = "#000000";
 
 // Initialize the grid on page load with default value of 16
 function initialize(depth) {
@@ -22,11 +23,15 @@ function gridGen(depth) {
         cell.className = "cell";
         // cell.innerText = n;
         cell.style.width = `${equalSpacing}%`;
+        cell.addEventListener("dragover", () => {
+          cell.style.backgroundColor = color;
+        })
         gridRow.appendChild(cell);
       }
       canvas.appendChild(gridRow);
     }
   } else {
+    flash.style.backgroundColor = "#f8d7da";
     flash.textContent = "Error, please pick a size between 2 and 100";
   }
 }
@@ -36,9 +41,11 @@ function gridClear() {
   canvas.innerHTML = "";
 }
 
-initialize(depth);
-
-input.addEventListener("change", () => {
+// Get new grid size and call new grid
+function button() {
   let newDepth = document.getElementById("dimension").value;
   gridGen(newDepth);
-});
+};
+
+
+initialize(depth);
