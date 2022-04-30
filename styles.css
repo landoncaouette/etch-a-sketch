@@ -16,20 +16,18 @@ body {
   margin: auto;
 }
 
-.size {
-  display: flex;
-  justify-content: center;
-}
-
 .row {
   display: flex;
   justify-content: center;
 }
 
+.size {
+  display: flex;
+  justify-content: center;
+}
+
 .flash {
-  height: 20px;
   color: red;
-  margin-top: 1rem;
   width: 50%;
   padding: 5px;
   border-radius: 5px;
@@ -93,6 +91,7 @@ button {
   width: 120px;
   height: 40px;
   font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
 }
 
 input {

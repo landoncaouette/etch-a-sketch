@@ -3,7 +3,7 @@ const input = document.getElementById("dimension");
 const canvas = document.querySelector(".canvas");
 const flash = document.querySelector(".flash");
 let color = "#000000";
-let hexColor = document.querySelector('.hexcolor');
+
 
 // Initialize the grid on page load with default value of 16
 function initialize(depth) {
@@ -13,8 +13,6 @@ function initialize(depth) {
 // Generate the grid
 function gridGen(depth) {
   if (depth >= 2 && depth <= 100) {
-    flash.textContent = "";
-    flash.style.backgroundColor = "";
     gridClear();
     let equalSpacing = (1 / depth) * 100;
     for (let i = 0; i < depth; i++) {
@@ -39,9 +37,11 @@ function gridGen(depth) {
   }
 }
 
-// Clear the grid
+// Clear the grid and flash message
 function gridClear() {
   canvas.innerHTML = "";
+  flash.textContent = "";
+  flash.style.backgroundColor = "";
 }
 
 // Get new grid size and call new grid
@@ -49,6 +49,5 @@ function button() {
   let newDepth = document.getElementById("dimension").value;
   gridGen(newDepth);
 };
-
 
 initialize(depth);
