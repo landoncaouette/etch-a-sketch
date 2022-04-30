@@ -11,14 +11,14 @@ body {
 }
 
 .container {
-  width: 60%;
-  min-width: 580px;
+  width: 50%;
+  min-width: 500px;
   margin: auto;
 }
 
 .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .header {
@@ -30,6 +30,17 @@ body {
   margin: auto;
   font-family: 'Rock Salt', cursive;
   color: #080808;
-  text-shadow: 0px 0px 20px #CC45C9;
+  text-shadow: 0px 0px 15px #CC45C9;
   letter-spacing: -2px;
+  font-size: 3rem;
+}
+
+.canvas {
+  margin: 2rem;
+  width: 500px;
+  aspect-ratio: 1 / 1;
+  padding: 5%;
+  background-color: #212121;
+  border: #313131 1px solid;
+  border-radius: 15px;
 }
