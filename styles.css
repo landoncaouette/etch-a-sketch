@@ -6,7 +6,7 @@
 body {
   background-color: #121212;
   color: #E0E0E0;
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -43,4 +43,18 @@ body {
   background-color: #212121;
   border: #313131 1px solid;
   border-radius: 15px;
+}
+
+.size {
+  margin-top: 1rem;
+}
+
+.grid-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.cell {
+  display: inline;
 }
