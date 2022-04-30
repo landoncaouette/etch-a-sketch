@@ -13,6 +13,8 @@ function initialize(depth) {
 // Generate the grid
 function gridGen(depth) {
   if (depth >= 2 && depth <= 100) {
+    flash.textContent = "";
+    flash.style.backgroundColor = "";
     gridClear();
     let equalSpacing = (1 / depth) * 100;
     for (let i = 0; i < depth; i++) {
