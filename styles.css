@@ -16,6 +16,11 @@ body {
   margin: auto;
 }
 
+.size {
+  display: flex;
+  justify-content: center;
+}
+
 .row {
   display: flex;
   justify-content: center;
@@ -74,4 +79,22 @@ body {
 
 .colorchange {
   background-color: #080808;
+}
+
+.buttons {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  font-size: 20px;
+  background-color: #999999;
+  width: 120px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input {
+  height: 80%;
 }

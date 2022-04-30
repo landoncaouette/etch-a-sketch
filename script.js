@@ -3,6 +3,7 @@ const input = document.getElementById("dimension");
 const canvas = document.querySelector(".canvas");
 const flash = document.querySelector(".flash");
 let color = "#000000";
+let hexColor = document.querySelector('.hexcolor');
 
 // Initialize the grid on page load with default value of 16
 function initialize(depth) {
