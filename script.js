@@ -50,4 +50,5 @@ function button() {
   gridGen(newDepth);
 };
 
+// Initialize the grid
 initialize(depth);
